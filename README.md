@@ -20,7 +20,7 @@ Test Classes
     Property date - Date for which we want to get the details. If not set, it will automatically use tomorrow's date. If set, it uses the date param as defined by user.
 
     The test class prints to console the weather details for Nottingham for the specified date.
-    Also the output is written to a file WeatherJsonOutput.json for better readability. The file will be created in the location from where the project is run.``____``
+    Also the output is written to a file WeatherJsonOutput.json for better readability. The file will be created in the location from where the project is run.
 
     2. MetaweatherAPIStretchFeatureTest Class
 
