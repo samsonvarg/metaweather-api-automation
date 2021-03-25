@@ -1,0 +1,41 @@
+QA Challenge Part 2 Questions
+
+1. Explain why you chose to use those particular tools/frameworks in the technical challenge?
+Answer - I used RestAssured because it is a easy to use library and has support for Java language,
+ which I am familiar and comfortable with. The library provides easy configuration to test API
+ eliminating the need to establish HTTP connection, write extensive request/response etc.
+ I also used JUnit as my choice of testing framework as it is easy to implement and write test classes.
+ In this scenario, I feel this framework was enough to cover the requirements.
+
+ In case we are looking to develop a more comprehensive testing framework with better reporting capabilities,
+ my preference would be to use TestNG.
+
+2. Describe the reason for the scope of your solution. Why did you test what you did,
+and why didn’t you test other things?
+Answer - I would say the scope of the solution is to mainly build the tests to cover the critical scenarios
+as per the problem statement. This is why I have added a test class used to test the Metaweather Location Search API
+based on city and date. I also added another test class which exposes what I consider a bug.
+This class covers the Metaweather Location Day API with invalid date parameter.
+
+A more comprehensive test scope would include iterating the test scenarios using a larger data set -
+valid and invalid data, boundary condition tests.
+
+
+3. What questions would you ask your Product Owner / what information would you need to know, to be able to test the whole MetaWeather API service comprehensively?
+Answer - Some of the things I would request are-
+a. Information regrading all possible HTTP status codes -
+    For example, successful API call should return 200,
+    creating a resource should return 201 CREATED and
+    unauthorised requests should return 403 FORBIDDEN, etc.
+b. Check scope beyond functional testing -
+    Details regarding the user load that the application should be able to handle.
+    We can also check if the response times of the API meets the agreed value in the SLA.
+    This will allow us to do performance testing of the API.
+c. Security and Authorisation -
+Check that the API is designed according to correct security principles - protocols, authorisation etc.
+
+4. After completing the technical challenge, what would you do differently
+if you were asked to do the same challenge again?
+Answer - I would like to test the scenario over larger data sets. I would also explore the usage of other tools and
+frameworks to build the test to see which is the best approach that can be applied as per a given requirement.
+
